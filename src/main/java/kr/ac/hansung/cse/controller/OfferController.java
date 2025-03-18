@@ -20,7 +20,6 @@ public class OfferController {
     public String showOffers(Model model) {
         List<Offer> offers = offerService.getAllOffers();
         model.addAttribute("id_offers", offers);
-
         return "offers";
     }
 }
