@@ -18,4 +18,7 @@ public class OfferService {
         return offerDao.getOffers();
     }
 
+    public void insertOffer(Offer offer) {
+        offerDao.insert(offer);
+    }
 }
